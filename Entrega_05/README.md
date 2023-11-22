@@ -1,0 +1,1 @@
+#### Para comenzar con la webstory decidimos hacer lo más simple que era guiarnos por el wireframe que habíamos realizado para una entrega anterior y ver si efectivamente era posible realizar lo que habíamos planeado con lo aprendido. Por ello comenzamos planificando cómo realizar la página de inicio donde se presenta la página. 
