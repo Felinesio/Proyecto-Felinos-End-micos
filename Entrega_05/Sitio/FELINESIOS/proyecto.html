@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Proyecto</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7d9a6;
+      color: #164351;
+    }
+
+    header {
+      background-color: #f09840;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    header h1 {
+      color: #164351;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .project-info {
+      background-color: #62d4c8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #538013;
+      color: #f7d9a6;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .mapa-container {
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Nuestro Proyecto</h1>
+  </header>
+
+  <nav>
+    <div class="dropdown">
+      <span style="font-size: 24px;"> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+          <style>svg{fill:#90b32a}</style>
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </span>
+      <div class="dropdown-content">
+        <a href="index.html">Inicio</a>
+        <a href="proyecto.html">El Proyecto</a>
+        <a href="Preservacion.html">Preservación</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section>
+      <header>
+        <h2>¿Cómo nace todo?</h2>
+      </header>
+      <p>
+        La propuesta de historia inicial apuntó a contar una problemática cercana a nosotros pero obviada por muchos, además, de tener tres variables que nos interesó trabajar: bases de datos, potencial gráfico y urgencia social.
+      </p>
+
+      <p>
+        De la lluvia de temas identificamos que históricamente Chile se ha caracterizado por poseer una diversa fauna a lo largo de todo el país con diferentes especies. Entendiendo eso, se acotó la investigación para narrar sobre los felinos endémicos silvestres que están en peligro de extinción.
+      </p>
+
+      <p>
+        Las diversas especies de felinos silvestres son protegidos por la ley 19.473 y la 4.061 sin embargo nos preguntamos ¿Qué felinos son protegidos? ¿Cuál es su estado de preservación actual? ¿Cuántos individuos maduros existen? ¿Cómo la acción humana reduce la población de los felidos? ¿Qué instituciones u organización los conservan? ¿Cuáles son sus características? ¿En qué hábitat coexisten?
+      </p>
+
+      <p>
+        Para responder esas preguntas, nuestra hipótesis apuntó a relacionar variables poblacionales y de caracterización del hábitat y de los felinos en Chile. De esta forma podríamos estudiar datos cualitativos y cuantitativos de las especies para explicar por qué se ven atacados por la acción humana y cómo fomentar su preservación.
+      </p>
+
+      <p>
+        Nuestra hipótesis: el hábitat y población de diferentes felinos endémicos de Chile se ha visto reducido por la acción humana. Por lo que es importante dar a conocer a estos felinos y sus formas de preservación.
+      </p>
+
+      <img src="https://www.tipicochileno.cl/wp-content/uploads/2022/08/gatoguina.jpg" alt="gatito 1">
+    </section>
+
+    <section>
+      <header>
+        <h2>¿La hipótesis?</h2>
+      </header>
+      <p>
+        El hábitat y población de diferentes felinos endémicos de Chile se ha visto reducido por la acción humana. Es importante dar a conocer a estos felinos y sus formas de preservación.
+      </p>
+
+      <p>
+        Para narrar investigamos papers y diversos sitios web de instituciones medioambientales (Ministerio de Medio Ambiente, Servicio Agrícola y Ganadero, ONG’s, Unión Internacional para la Conservación de la Naturaleza, IUCN Red List, etc.) que nos proporcionaron bases de datos para trabajar. Escogimos a cinco félidos protegidos, tales como el Puma concolor, el gato colo-colo, el gato montes andino, el gato montes argentino y el gato güiña. En honor a estos félidos, se decidió nombrar el proyecto y el reportaje como “Felinesios”.
+      </p>
+    </section>
+
+    <section>
+      <h2>¿Cuál es el proyecto?</h2>
+      <div class="project-info">
+        <header>
+          <h1>En Resumen...</h1>
+        </header>
+        <p>
+          Felinesios tiene una meta clara: informar sobre las especies endémicas de nuestro país.
+        </p>
+
+        <img src="https://storage.googleapis.com/chile-travel-static-content/2020/06/gato-andino_ok.jpg" alt="gatito 1">
+
+        <p>
+          Deseamos crear un sitio con una identidad visual simple y basada en las imágenes. Ninguna de nuestras páginas tendrá solamente texto, queremos descansos visuales para nuestros lectores.
+        </p>
+
+        <img src="https://blog.felinus.cl/wp-content/uploads/2023/05/Gato-huina-5-1024x576.png" alt="gatito 2">
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>¿Dónde se ubican los felinos?</h2>
+      </header>
+      <p>
+        A continuación puedes ver una visualización atómica donde se muestra la región que habita cada felino en Chile haciendo clic en sus nombres a la derecha.
+      </p>
+      <!-- IFrame para mostrar el mapa de gatos generado por Plotly -->
+      <div class="mapa-container">
+        <iframe src="mapa_de_gatos (2).html" width="100%" height="600px" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Características generales de los felinos</h2>
+      </header>
+      <p>
+        A continuación te dejamos una visualización gráfica para que conozcas información muy general sobre los felinos, sin embargo, si quieres saber más sobre ellos ve a las fichas especializadas que preparamos en la sección de inicio y ve a nuestros cinco felinos.
+      </p>
+      <p>
+        <img src="https://i.ibb.co/0sY6Cnr/11213123.png" alt="gatito 2">
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; Felinesios</p>
+  </footer>
+
+</body>
+
+</html>
