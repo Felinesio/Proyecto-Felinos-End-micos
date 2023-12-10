@@ -5,15 +5,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo para mejorar la visibilidad */
+    text-align: center; /* Para centrar el contenido */
 }
 
 header {
-    text-align: center;
     background-color: #3498db;
     padding: 20px 0;
-}
-
-header h1 {
     color: white;
 }
 
@@ -31,7 +28,6 @@ nav a {
 }
 
 /* Menú desplegable */
-
 .dropdown {
     display: inline-block;
 }
@@ -59,7 +55,6 @@ nav a {
 .dropdown span svg {
     height: 60px;
 }
-
 
 .gato-container {
     display: flex;
@@ -119,28 +114,509 @@ iframe {
     75% { left: -300%; }
     95% { left: -300%; }
     100% { left: -400%; }
-    }
-    
-    body { margin: 0; } 
-    div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 30s slidy infinite; 
-    }
+}
 
-    footer {
-        background-color: #538013;
-        color: #f7d9a6;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
-    
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+.ventana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.bloque-derecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.contenido-bloque {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 2.5; 
+}
+
+
+.png {
+    flex: 1;
+}
+
+.png img {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-height: 400px; /* Establece la altura máxima si es necesario */
+}
+
+.otro-bloque {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.grafico {
+    background-color: #538013;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grafico h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grafico p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.Amenazas {
+    background-color: #164351;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Amenazas h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Amenazas p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+
+.seccion-guina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-height: 400px; /* Establece la altura máxima si es necesario */
+}
+
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #90b32a; /* Cambia el color de fondo según tus preferencias */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    color: #ffffff; /* Cambia el color del texto si es necesario para que sea visible en el nuevo fondo */
+}
+
+
+
+/* Estilos para la Guiña */
+
+.imagen-gato {
+    text-align: right;
+    margin: 20px;
+}
+
+.gato {
+    display: inline-block;
+}
+
+.gato-imagenguiña {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-guina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #538013;
+    color: #f7d9a6;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Alerta */ 
+
+
+.alert-container {
+    background-color: #EEB72B;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content p {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EEB72B;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* Estilos para el COLO VIVA EL ALBO  */
+
+.imagen-gato {
+    text-align: right;
+    margin: 20px;
+}
+
+.gato {
+    display: inline-block;
+}
+
+.gato-colo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-colo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #538013;
+    color: #f7d9a6;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Alerta */ 
+
+
+.alert-container2 {
+    background-color: #EDF56E;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content p {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EEB72B;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+
+
+/* Estilos para EL PUMA  */
+
+.imagen-pumaaa {
+    text-align: right;
+    margin: 20px;
+}
+
+.gato {
+    display: inline-block;
+}
+
+.gato-pumaaa {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-pumaaa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #538013;
+    color: #f7d9a6;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Alerta */ 
+
+
+.alert-container3 {
+    background-color: #EDF56E;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content p {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EEB72B;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+
+/* Estilos para el gato andino  */
+
+.imagen-andino {
+    text-align: right;
+    margin: 20px;
+}
+
+.andino {
+    display: inline-block;
+}
+
+.gato-andino {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-andino {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #538013;
+    color: #f7d9a6;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Alerta */ 
+
+
+.alert-container4 {
+    background-color: #EDF56E;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content p {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EEB72B;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+
+/* Estilos para el gato montes  */
+
+.imagen-montes {
+    text-align: right;
+    margin: 20px;
+}
+
+.montes {
+    display: inline-block;
+}
+
+.gato-montes {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-montes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gif {
+    flex: 1;
+}
+
+.gif img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.texto-derecha {
+    flex: 2;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #538013;
+    color: #f7d9a6;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Alerta */ 
+
+
+.alert-container4 {
+    background-color: #EDF56E;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content p {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EEB72B;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}

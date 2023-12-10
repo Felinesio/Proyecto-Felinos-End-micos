@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Extinción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #alert-container {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #alert-container.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="alert-container">
+    <strong>Alerta:</strong> Esta especie está en peligro de extinción.
+</div>
+
+<p>
+    <!-- Tu contenido explicativo aquí -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+</p>
+
+<script>
+    // Puedes cambiar esta variable según la condición de extinción
+    const enPeligroDeExtincion = true;
+
+    // Obtener el contenedor de alerta
+    const alertContainer = document.getElementById('alert-container');
+
+    // Agregar la clase 'success' si la especie no está en peligro de extinción
+    if (!enPeligroDeExtincion) {
+        alertContainer.classList.add('success');
+        alertContainer.innerHTML = '<strong>Información:</strong> Esta especie no está en peligro de extinción.';
+    }
+</script>
+
+</body>
+</html>
