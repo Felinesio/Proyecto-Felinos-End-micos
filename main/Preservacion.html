@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preservación de Felinos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #538013;
+            padding: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #538013;
+            color: #f7d9a6;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilos para la página de preservación */
+        body.preservacion-page {
+            background-color: #f9f9f9;
+        }
+
+        .preservacion-section {
+            margin-bottom: 20px;
+        }
+
+        .preservacion-images img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .preservacion-links {
+            text-align: center;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #538013;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Función para abrir enlaces en una nueva ventana
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+<body class="preservacion-page">
+
+<header>
+    <h1>Felinesios</h1>
+</header>
+
+<nav>
+    <div class="dropdown">
+        <span style="font-size: 24px;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <style>svg{fill:#90b32a}</style>
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </span>
+        <div class="dropdown-content">
+            <a href="index.html">Inicio</a>
+            <a href="proyecto.html">El Proyecto</a>
+            <a href="preservacion.html">Preservación</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content-container">
+    <section class="preservacion-section">
+        <h2>Importancia de la Preservación de los Felinos endémicos en Chile</h2>
+        <p>La preservación de felinos es crucial para el equilibrio ecológico y para cuidar a estas especies que están en peligro de extinción.
+            En Felinesios hemos realizado una investigación sobre diferentes organizaciones dedicadas al cuidado de estos felinos y lugares donde
+            puedes contribuir para el cuidado de estas especies. A continuación te dejamos algunos sitios u organizaciones que cumplen estos propósitos
+            y son de confianza para el cuidado de estos animales y donde podrás saber más sobre ellos. 
+        </p>
+    </section>
+
+    <section class="preservacion-images">
+       <img src="https://gatoandino.org/wp-content/uploads/2019/11/alianza-gato-andino-logo.png" alt="">
+    </section>
+    <p>La Alianza Gato Andino es una organización que se dedica a la investigación, educación, capacitación y conservación del gato andino. A través de su sitio puedes informarte sobre la genética del gato andino además de capacitarte apra ayudar a mantener su población, a portar en sus proyectos o donar en su sitio.
+    </p>
+    <section class="preservacion-links">
+        <h2>Alianza Gato Andino</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://donate.wildnet.org/?fund=Andean_Cat')">Dona en Alianza Gato Andino</div>
+        <div class="link-button" onclick="openLink('https://gatoandino.org/')">Conoce el proyecto Alianza Gato Andino</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://www.felinossilvestres.com/wp-content/uploads/elementor/thumbs/logo-q4v92gct14ns3yp81z14oazrrf41214epegc9zp7d4.png" alt="">
+    </section>
+    <p>La Fundación Coordinación de Felinos Silvestres (FCFS) se formaliza el 25 de noviembre del año 2020, 
+        como respuesta a la falta de una agrupación que abordara a todos los felinos silvestres de Chile.
+         Si bien ya se le daba cierta importancia al puma (Puma concolor), en especial en lo que respecta a 
+         Torres del Paine, los felinos silvestres eran invisibilizados, sobre todo los más pequeños.
+          De esto surge entonces la necesidad de contribuir al conocimiento y educación para la 
+          conservación de los felinos silvestres y su ecosistema, objetivo principal de la fundación
+          , al que luego se le añadiría el fomento de la tenencia responsable de animales de compañía,
+           ambos serían los pilares que darían lugar a un gran número de proyectos.
+    </p>
+    <section class="preservacion-links">
+        <h2>Fundación Coordinación Felinos Silvestres</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://www.felinossilvestres.com/#:~:text=Sobre%20Nosotros%20FCFS,los%20felinos%20silvestres%20de%20Chile.')">Conoce el proyecto</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://dona.wwf.cl/assets/images/wwf-logo.png" alt="">
+    </section>
+    <p>"WWF, o Fondo Mundial para la Naturaleza, es una
+         organización apasionada por la conservación de 
+         nuestro valioso entorno. Trabajan incansablemente para
+          asegurar que la convivencia entre los seres humanos y
+           la naturaleza sea armoniosa. Pero no pueden lograrlo solos;
+            necesitan tu colaboración.
+
+    </p>
+    <section class="preservacion-links">
+        <h2>Fondo Mundial para la Naturaleza</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://dona.wwf.cl/index.php')">Dona a WWF</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://www.sanbi.org/wp-content/uploads/2018/07/iucn-red-list-logo-red.jpg" alt="">
+    </section>
+    <p>"
+        Establecida en 1964, la Lista Roja de Especies Amenazadas de la Unión Internacional para la 
+        Conservación de la Naturaleza (UICN) ha evolucionado para convertirse en la fuente de información 
+        más completa del mundo sobre el estado de conservación global de especies animales, hongos y plantas.
+    </p>
+    <p>
+        La Lista Roja de la UICN es un indicador crítico de la salud de la biodiversidad mundial. Más que una 
+        simple lista de especies y su estado, es una herramienta poderosa para informar y catalizar acciones en 
+        favor de la conservación de la biodiversidad y cambios en políticas, esenciales para proteger los recursos 
+        naturales que necesitamos para sobrevivir. Proporciona información sobre el rango, tamaño de la población, 
+        hábitat y ecología, uso y/o comercio, amenazas y acciones de conservación, lo que contribuirá a informar las
+         decisiones necesarias para la conservación.
+    </p>
+    <section class="preservacion-links">
+        <h2>Lista roja de la UICN</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://www.iucnredlist.org/support/donate')">Dona a WWF</div>
+        <div class="link-button" onclick="openLink('https://www.iucnredlist.org/')">Conoce el proyecto </div>
+
+     
+    </section>
+</div>
+
+
+<footer>
+    <p>&copy; Felinesios</p>
+</footer>
+
+</body>
+</html>

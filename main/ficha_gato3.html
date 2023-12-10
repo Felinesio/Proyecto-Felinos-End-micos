@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha del Gato</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7d9a6; /* Fondo de color beige claro */
+      color: #164351; /* Color de texto azul oscuro */
+    }
+
+    header {
+        text-align: center;
+        background-color: #538013;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+    nav {
+        text-align: center;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown span svg {
+        height: 60px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff; /* Fondo de color blanco */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cat-card {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8; /* Fondo de color gris claro */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #538013; /* Color de texto verde oscuro */
+    }
+
+    p {
+      color: #666;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer; 
+    }
+
+    /* Estilos de la ventana modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #f7d9a6; /* Fondo de color beige claro */
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .close-modal {
+      color: #538013; /* Color de texto verde oscuro */
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .slick-slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 24px;
+      color: #538013;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Abrir la ventana modal al hacer clic en la imagen
+      $(".cat-image").click(function () {
+        $(".modal").fadeIn();
+      });
+
+      // Cerrar la ventana modal al hacer clic en el botón de cerrar
+      $(".close-modal").click(function () {
+        $(".modal").fadeOut();
+      });
+
+      // Cerrar la ventana modal al hacer clic fuera de ella
+      $(window).click(function (e) {
+        if ($(e.target).hasClass("modal")) {
+          $(".modal").fadeOut();
+        }
+      });
+
+      // Inicializar el carrusel
+      $('.cat-images').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev">&#8592;</button>',
+        nextArrow: '<button type="button" class="slick-next">&#8594;</button>'
+      });
+    });
+  </script>
+</head>
+<body>
+
+<header>
+    <h1>FELINESIOS</h1>
+</header>
+
+<nav>
+    <div class="dropdown">
+        <span style="font-size: 24px;"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <style>svg{fill:#90b32a}</style>
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </span>
+        <div class="dropdown-content">
+            <a href="index.html">Inicio</a>
+            <a href="proyecto.html">El Proyecto</a>
+            <a href="Preservacion.html">Preservación</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="cat-card">
+    <img src="https://i.ibb.co/1z57Cg7/PUMA.png" alt="Imagen del Gato" width="300" class="cat-image">
+    <h2>Puma</h2>
+    <p><strong>Nombre científico: Puma Concolor</strong></p>
+    <p><strong>Esperanza de vida:</strong> 10 a 13 años </p>
+    <p><strong>Peso:</strong>  34 a 48 kg (hembras) 53 a 72 kg  (machos)</p>
+    <p><strong>Población: Desconocida</strong></p>
+    <p><strong>Tamaño: 105 a 180 cm de largo</strong></p>
+  </div>
+
+  <!-- Contenedor para el carrusel -->
+  <div class="cat-images">
+    <img src="https://www.chileanimal.cl/wp-content/uploads/2020/08/Imagen-6.png" alt="Imagen 2">
+    <img src="https://www.shutterstock.com/image-photo/puma-nature-winter-habitat-snow-600nw-2193649299.jpg" alt="Imagen 3">
+    <img src="https://pagina19.cl/wp-content/uploads/2023/07/leah-huyghe-umWPg1Adts-unsplash-2-scaled.jpg" alt="img5">
+    <img src="https://www.shutterstock.com/image-photo/puma-walking-mountain-environment-torres-600nw-2262331785.jpg" alt="img4">
+  </div>
+</div>
+
+<!-- Ventana modal -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Información detallada</h2>
+    <p>Es el carnívoro terrestre más grande que habita en Chile, aunque su tamaño y peso varía según la subespecie y área
+      geográfica, siendo en general más grandes los animales del altiplano y especialmente los del extremo sur. En la
+       zona centro sur generalmente no sobrepasan los 35 a 40
+     kg de peso y 1,5 m de longitud total, mientras que en Aysén y Magallanes 
+     se han capturado individuos de poco más de 100 kg y casi 2,5 m de longitud. <p>
+     
+    </p>
+    Es un animal territorial, de hábitos solitarios y crepusculares o nocturnos, aunque también presenta actividad a pleno día. El puma es generalista, teniendo una dieta muy diversa según el sector geográfico en donde se ubique. Consume preferentemente mamíferos 
+    terrestres (desde grandes cérvidos y camélidos, hasta diminutos roedores) (Pacheco et al. 2004). . En Chile esta especie se distribuye desde el límite norte con Perú hasta el Estrecho de Magallanes. - Considerado un animal perjudicial para la ganadería, es acosado y cazado 
+    furtivamente (Schlatter et al. 1987). 
+ </p>
+ Por otro lado la fragmentación y pérdida de 
+ hábitat, ha afectado la disponibilidad de alimento, refugio y territorio, lo que 
+ aumenta la presión en las poblaciones a nivel local. Se considera que estaría 
+ replegado a tierras altas e inaccesibles, donde la reducción severa de los 
+ ungulados debido a acciones de caza y/o modificación de hábitat por 
+ deforestación, es la principal amenaza
+     </p>
+
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLpBUiFg9alKgyOWVqlrDWxuQ-Nh65plyRe8odnjYQw&s" alt="Descripción de la imagen">
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Felinesios</p>
+</footer>
+
+</body>
+</html>
