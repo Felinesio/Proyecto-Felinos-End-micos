@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felinesios</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.ibb.co/w7pxzKb/GATITOTOTOTOTO.png" type="image/x-icon">
 </head>
 <body>
 
@@ -13,7 +14,6 @@
     <img src="https://i.ibb.co/wzjXZPV/thumbnail-Ilustracio-n-sin-ti-tulo.jpg" alt="FELINESIOS">
 </header>
 
-<!-- Cuarto Bloque de Contenido (Otro Bloque a la Derecha) -->
 <section class="bloque-derecha">
     <div class="contenido-bloque">
         <p>
@@ -50,7 +50,7 @@
       </p>
   </div>
   <div class="mapa">
-      <!-- Mapa Visual Aquí -->
+      <!-- Mapa Visual  -->
       <iframe src="mapa_de_gatos (2).html" width="100%" height="100%" frameborder="0"></iframe>
   </div>
 
@@ -129,22 +129,65 @@
   </section>
 
 
+  
+
     <div class="alert-container">
         <strong>Estado VULNERABLE:</strong> Esta especie está en peligro alto de extinción.
         Esto significa que la probabilidad de extinción en estado silvestre de la Huiña es de un 10% dentro de los próximos 100 años. 
     </div>
     
   
-  <section class="seccion-gatoguiña">
-    <div class="texto-izquierda">
-      <p>¡Para conocer más sobre la Huiña haz click en su imagen!.</p>
-    </div>
-    <div class="gato">
-      <a href="ficha_gato2.html">
+    <section class="seccion-gatoguiña">
+      <div class="texto-izquierda">
+        <h1>¡Para conocer más sobre la Huiña haz click en su imagen!.</h1>
+      </div>
+      <div class="gato" onclick="openModal('myModal1')">
         <img src="https://i.ibb.co/yyv3bJp/GUI-A.png" alt="Gato" class="gato-imagenguiña">
-      </a>
+      </div>
+    </section>
+
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+        <h2>Gato Huiña</h2>
+        <p> <div class="container">
+          <div class="cat-card">
+            <img src="https://i0.wp.com/laderasur.com/wp-content/uploads/2017/05/foto-7-2.jpg?ssl=1" alt="Imagen del Gato" width="400" class="cat-image">
+            <h2>Gato Güiña</h2>
+            <p><strong>Nombre científico: Leopardus guigna</strong></p>
+            <p><strong>Esperanza de vida:</strong> 11 años </p>
+            <p><strong>Peso:</strong>  1,8 a 2,5 kg (hembras) 2,0 a 2,5 (machos)</p>
+            <p><strong>Población: Menos de 10000 individuos maduros</strong></p>
+            <p><strong>Tamaño: 37 a 51 cm de largo</strong></p>
+          </div>
+        </div>
+
+        </p>
+      </div>
     </div>
-  </section>
+
+    <iframe width="958" height="539" src="https://www.youtube.com/embed/6Tq7BuDRz1A" title="Guiña - Parque Neltume" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <script>
+      // Función para abrir la ventana modal
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+    
+      // Función para cerrar la ventana modal
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+    
+      // Cerrar haciendo click afuera
+      window.onclick = function (event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      };
+    </script>
 
 
 
@@ -155,8 +198,7 @@
     <div class="texto-derecha">
       <h2>Gato Colo Colo</h2>
 
-        <p>Este felino ha sido fuertemente explotado por su piel y algunas comunidades
-           lo han cazado por considerarlo predador. Poseen una población estimada de bajo 
+        <p>Poseen una población estimada de bajo 
            los 5.000 individuos maduros en su rango de distribución mundial. Con una tendencia a
           declinar debido a la degradación de su hábitat y la cacería.           
         </p>
@@ -184,18 +226,36 @@
     </div>
     
     
-  
-  <section class="seccion-gatoguiña">
-    <div class="texto-izquierda">
-      <p>¡Para conocer más sobre el gato Colo haz click en su imagen!.</p>
-    </div>
-    <div class="gato">
-      <a href="ficha_gato1.html">
+    <section class="seccion-gatocolocolo">
+      <div class="texto-izquierda">
+        <h1>¡Para conocer más sobre el Colo Colo haz click en su imagen!</h1>
+      </div>
+      <div class="gato" onclick="openModal('myModal2')">
         <img src="https://i.ibb.co/x59w7SC/colo-colo.png" alt="Gato" class="gato-imagenguiña">
-      </a>
+      </div>
+    </section>
+    
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <h2>Gato Colo Colo</h2>
+        <p>
+          <div class="container">
+            <div class="cat-card">
+              <img src="https://blog.felinus.cl/wp-content/uploads/2023/04/IMAGENES-WORDPRESS-1200-%C3%97-675-px-5-1024x576.png" alt="Imagen del Gato" width="300" class="cat-image">
+              <h2>Gato Colo Colo</h2>
+              <p><strong>Nombre científico: Leopardus colocolo</strong> 3 años</p>
+              <p><strong>Esperanza de vida:</strong> 9 años (algunos pocos han llegado a 16 años) </p>
+              <p><strong>Peso:</strong> 2 a 3.7 kg (machos y hembras)</p>
+              <p><strong>Población: Menos de 5000 especies</strong></p>
+              <p><strong>Tamaño: 70 cm de largo aproximadamente, 35 cm de cola</strong></p>
+            </div>
+          </div>
+        </p>
+      </div>
     </div>
-  </section>
 
+    <iframe width="958" height="539" src="https://www.youtube.com/embed/5Y5xNFd9tx4" title="Gato Colocolo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <section class="seccion-pumaaa">
     <div class="gif">
         <img src="https://i.ibb.co/zZZvy1t/Whats-App-Video-2023-12-03-at-19-02-18.gif" alt="gif pumaaa">
@@ -204,18 +264,16 @@
       <h2>Puma</h2>
 
         <p>El puma es uno de los felinos con mayor capacidad de adaptarse, siendo capaces de habitar
-           sitios cordilleranos, áridos e incluso con civilización, principalmente sectores agrícolas. 
+           sitios cordilleranos, áridos e incluso con civilización, principalmente sectores agrícolas.
+           Este felino ha sufrido principalmente caza debido a que son considerados una amenaza para la 
+           ganadería de las zonas agrícolas a las que puede llegar en búsqueda de alimento.
           
         </p>
-        <p> A pesar de esto, este felino que habita desde el norte de Perú hasta el Estrecho de Magallanes, 
-          ha sufrido desplazamientos debido principalmente a la deforestación y caza. Principalmente son cazados
-           debido a que son considerados una amenaza para la ganadería de las zonas agrícolas a las que puede llegar
-            en búsqueda de alimento.
-          </p>
+ 
           <p>
-            El SAG a través de la División de Protección de los Recursos Naturales Renovables (DIPROREN) ha sido uno 
-            de los principales receptores de las denuncias y quejas de la comunidad por la muerte de mamíferos para la
-             ganadería, siendo las principales presas guanacos, aves, ovejas, cabras y perros. 
+            El SAG a través de la División de Protección de los Recursos Naturales Renovables (DIPROREN) 
+            ha sido uno de los principales receptores de las denuncias y quejas de la comunidad por la muerte
+             de mamíferos para la ganadería, siendo las principales presas guanacos, aves, ovejas, cabras y perros.
           </p>
     </div>
     
@@ -228,17 +286,34 @@
       </div>
     
     
-  <section class="seccion-gatoguiña">
-    <div class="texto-izquierda">
-      <p>¡Para conocer más sobre el Puma haz click en su imagen!.</p>
+      <h1>¡Para conocer más sobre el Puma haz click en su imagen!</h1>
     </div>
-    <div class="gato">
-      <a href="ficha_gato3.html">
-        <img src="https://i.ibb.co/1z57Cg7/PUMA.png" alt="Gato" class="gato-imagenguiña">
-      </a>
+    <div class="gato" onclick="openModal('myModal3')">
+      <img src="https://i.ibb.co/1z57Cg7/PUMA.png" alt="Gato" class="gato-imagenguiña">
     </div>
   </section>
+  
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('myModal3')">&times;</span>
+      <h2>Puma</h2>
+      <p>
+        <div class="container">
+          <div class="cat-card">
+            <img src="https://www.ngenespanol.com/wp-content/uploads/2023/01/puma-el-animal-de-la-fuerza-y-vitalidad-de-los-pueblos-prehispanicos-felino.jpg" alt="Imagen del Gato" width="300" class="cat-image">
+            <h2>Puma</h2>
+            <p><strong>Nombre científico: Puma Concolor</strong></p>
+            <p><strong>Esperanza de vida:</strong> 10 a 13 años </p>
+            <p><strong>Peso:</strong> 34 a 48 kg (hembras) 53 a 72 kg  (machos)</p>
+            <p><strong>Población: Desconocida</strong></p>
+            <p><strong>Tamaño: 105 a 180 cm de largo</strong></p>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
 
+  <iframe width="958" height="539" src="https://www.youtube.com/embed/b-7cnV3crws" title="Gonzalo Ramírez conoció los pumas en la Patagonia Chilena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <section class="seccion-andino">
     <div class="gif">
         <img src="https://i.ibb.co/JcMst5X/Whats-App-Video-2023-12-05-at-13-58-16.gif" alt="gif andino">
@@ -246,11 +321,13 @@
     <div class="texto-derecha">
       <h2>Gato Andino</h2>
 
-        <p>Se distribuye entre Argentina, Perú, Bolivia y Chile. Particularmente en nuestro país la principal causa 
-           desplazamiento de este animal es la industria de extracción minera. El investigador y coordinador de campo 
-           del programa CATcrafts en Chile, Nicolás Lagos, indica que los yacimientos mineros de oro, plata y cobre 
-           operan precisamente en zonas de alta cordillera donde el félido tiene presencia. Las compañías para construir 
-           sus redes de caminos, de tuberías o de alta tensión, dinamitan cerros e impactan enormes extensiones de territorio.
+        <p>La principal causa del desplazamiento de este animal es la industria de extracción minera.
+           Los yacimientos mineros de oro, plata y cobre operan precisamente en zonas de alta cordillera
+            donde el félido tiene presencia. Las compañías para construir sus redes de caminos, de tuberías o de alta tensión, 
+          Otras amenazas se encuentran ligadas principalmente a la cacería y persecución debido a costumbres religiosas de 
+          los pueblos altoandinos, quienes utilizan pieles de gato andino -y de gato colocolo- para atraer 
+          la buena suerte para las cosechas y reproducción del ganado camélido. 
+          
         </p>
         <p>El 2023, por medio del sitio Mongabay, Enrique Vera realizó un completo reportaje web sobre la situación 
           del Gato Andino en el continente. donde menciona la situación sobre la minería en Chile. Puedes revisarlo 
@@ -259,12 +336,8 @@
           
           </p>
           <p>
-            Otras amenazas se encuentran ligadas principalmente a la cacería y persecución debido a costumbres religiosas
-             de los pueblos altoandinos, quienes utilizan pieles de gato andino y de gato colocolo para atraer la buena suerte
-              para las cosechas y reproducción del ganado camélido. La cacería intensiva de chinchillas durante el siglo XIX e
-               inicios del siglo XX, importante ítem alimenticio para el gato andino, generó disminución de sus poblaciones lo
-                que determina un nuevo rango de distribución fragmentada, acorde a los parches de distribución de las chinchillas
-                 y vizcachas.
+            Igualmente, la cacería intensiva de chinchillas durante el siglo XIX e inicios del siglo XX,
+             importante ítem alimenticio para el gato andino, generó disminución de sus poblaciones.
           </p>
     </div>
     
@@ -277,15 +350,34 @@
   
   <section class="seccion-gatoguiña">
     <div class="texto-izquierda">
-      <p>¡Para conocer más sobre el Gato Andino haz click en su imagen!.</p>
+      <h1>¡Para conocer más sobre el Gato Andino haz click en su imagen!</h1>
     </div>
-    <div class="gato">
-      <a href="ficha_gato5.html">
-        <img src="https://i.ibb.co/wspm3ht/andino.png" alt="Gato" class="gato-imagenguiña">
-      </a>
+    <div class="gato" onclick="openModal('myModal4')">
+      <img src="https://i.ibb.co/wspm3ht/andino.png" alt="Gato" class="gato-imagenguiña">
     </div>
   </section>
+  
+  <div id="myModal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('myModal4')">&times;</span>
+      <h2>Gato Andino</h2>
+      <p>
+        <div class="container">
+          <div class="cat-card">
+            <img src="https://imgs.mongabay.com/wp-content/uploads/sites/25/2019/07/12215704/Gato-Andino-2-firma-Ingle%CC%81s.jpg" alt="Imagen del Gato" width="300" class="cat-image">
+            <h2>Gato Andino</h2>
+            <p><strong>Nombre científico: Leopardus jacobita</strong></p>
+            <p><strong>Esperanza de vida:</strong> 9 a 12 años </p>
+            <p><strong>Peso:</strong> 4 a 8 kg (hembras y machos)</p>
+            <p><strong>Población: No más de 1400 individuos</strong></p>
+            <p><strong>Tamaño: 75 a 85 cm de largo</strong></p>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
 
+  <iframe width="958" height="539" src="https://www.youtube.com/embed/pDffXYD0zAY" title="Héroes de la Conservación: el Gato Andino | Nat Geo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
   <section class="seccion-montes">
     <div class="gif">
@@ -313,7 +405,6 @@
   </section>
 
 
-
     <div class="alert-container">
         <strong>Estado Casi Amenazado:</strong> Esta especie está próxima a estar en peligro de extinción. 
         Esto significa que, si bien aún no está en riesgo, dentro de los próximos años, de seguir igual la 
@@ -321,19 +412,137 @@
     </div>
 
   
-  <section class="seccion-gatoguiña">
-    <div class="texto-izquierda">
-      <p>¡Para conocer más sobre el Gato Montés haz click en su imagen!.</p>
-    </div>
-    <div class="gato">
-      <a href="ficha_gato4.html">
+    <section class="seccion-gatoguiña">
+      <div class="texto-izquierda">
+        <h1>¡Para conocer más sobre el Gato Montes haz clic en su imagen!</h1>
+      </div>
+      <div class="gato" onclick="openModal('myModal5')">
         <img src="https://i.ibb.co/LrVpSmz/geofrey.png" alt="Gato" class="gato-imagenguiña">
-      </a>
+      </div>
+    </section>
+    
+    <div id="myModal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+        <h2>Gato Montes</h2>
+        <p>
+          <div class="container">
+            <div class="cat-card">
+              <img src="https://www.ngenespanol.com/wp-content/uploads/2023/01/gato-montes-el-pequeno-cazador-de-cuatro-continentes-felinos.jpg" alt="Imagen del Gato" width="300" class="cat-image">
+              <h2>Gato Montes</h2>
+              <p><strong>Nombre científico: Leopardus Geoffrey</strong></p>
+              <p><strong>Esperanza de vida:</strong> 7 a 10 años </p>
+              <p><strong>Peso:</strong> 3 a 5 kg (hembras y machos)</p>
+              <p><strong>Población: Desconocido</strong></p>
+              <p><strong>Tamaño: Hasta 60 cm de largo</strong></p>
+            </div>
+          </div>
+        </p>
+      </div>
     </div>
-  </section>
 
-  
-  
+    <iframe width="958" height="539" src="https://www.youtube.com/embed/vXMWwlhfYqw" title="Gato Montés | Planet Doc Express" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <script>
+      // Función para abrir enlaces en una nueva ventana
+      function openLink(url) {
+          window.open(url, '_blank');
+      }
+  </script>
+
+  <div class="content-container">
+    <section class="preservacion-section">
+        <h2>Importancia de la Preservación de los Felinos endémicos en Chile</h2>
+        <p>La preservación de felinos es crucial para el equilibrio ecológico y para cuidar a estas especies que están en peligro de extinción.
+            En Felinesios hemos realizado una investigación sobre diferentes organizaciones dedicadas al cuidado de estos felinos y lugares donde
+            puedes contribuir para el cuidado de estas especies. A continuación te dejamos algunos sitios u organizaciones que cumplen estos propósitos
+            y son de confianza para el cuidado de estos animales y donde podrás saber más sobre ellos. 
+        </p>
+    </section>
+
+    <section class="preservacion-images">
+       <img src="https://gatoandino.org/wp-content/uploads/2019/11/alianza-gato-andino-logo.png" alt="">
+    </section>
+    <p>La Alianza Gato Andino es una organización que se dedica a la investigación, educación, capacitación y conservación del gato andino. A través de su sitio puedes informarte sobre la genética del gato andino además de capacitarte apra ayudar a mantener su población, a portar en sus proyectos o donar en su sitio.
+    </p>
+    <section class="preservacion-links">
+        <h2>Alianza Gato Andino</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://donate.wildnet.org/?fund=Andean_Cat')">Dona en Alianza Gato Andino</div>
+        <div class="link-button" onclick="openLink('https://gatoandino.org/')">Conoce el proyecto Alianza Gato Andino</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://www.felinossilvestres.com/wp-content/uploads/elementor/thumbs/logo-q4v92gct14ns3yp81z14oazrrf41214epegc9zp7d4.png" alt="">
+    </section>
+    <p>La Fundación Coordinación de Felinos Silvestres (FCFS) se formaliza el 25 de noviembre del año 2020, 
+        como respuesta a la falta de una agrupación que abordara a todos los felinos silvestres de Chile.
+         Si bien ya se le daba cierta importancia al puma (Puma concolor), en especial en lo que respecta a 
+         Torres del Paine, los felinos silvestres eran invisibilizados, sobre todo los más pequeños.
+          De esto surge entonces la necesidad de contribuir al conocimiento y educación para la 
+          conservación de los felinos silvestres y su ecosistema, objetivo principal de la fundación
+          , al que luego se le añadiría el fomento de la tenencia responsable de animales de compañía,
+           ambos serían los pilares que darían lugar a un gran número de proyectos.
+    </p>
+    <section class="preservacion-links">
+        <h2>Fundación Coordinación Felinos Silvestres</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://www.felinossilvestres.com/#:~:text=Sobre%20Nosotros%20FCFS,los%20felinos%20silvestres%20de%20Chile.')">Conoce el proyecto</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://dona.wwf.cl/assets/images/wwf-logo.png" alt="">
+    </section>
+    <p>"WWF, o Fondo Mundial para la Naturaleza, es una
+         organización apasionada por la conservación de 
+         nuestro valioso entorno. Trabajan incansablemente para
+          asegurar que la convivencia entre los seres humanos y
+           la naturaleza sea armoniosa. Pero no pueden lograrlo solos;
+            necesitan tu colaboración.
+
+    </p>
+    <section class="preservacion-links">
+        <h2>Fondo Mundial para la Naturaleza</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://dona.wwf.cl/index.php')">Dona a WWF</div>
+     
+    </section>
+</div>
+
+<div class="content-container">
+    <section class="preservacion-images">
+       <img src="https://www.sanbi.org/wp-content/uploads/2018/07/iucn-red-list-logo-red.jpg" alt="">
+    </section>
+    <p>"
+        Establecida en 1964, la Lista Roja de Especies Amenazadas de la Unión Internacional para la 
+        Conservación de la Naturaleza (UICN) ha evolucionado para convertirse en la fuente de información 
+        más completa del mundo sobre el estado de conservación global de especies animales, hongos y plantas.
+    </p>
+    <p>
+        La Lista Roja de la UICN es un indicador crítico de la salud de la biodiversidad mundial. Más que una 
+        simple lista de especies y su estado, es una herramienta poderosa para informar y catalizar acciones en 
+        favor de la conservación de la biodiversidad y cambios en políticas, esenciales para proteger los recursos 
+        naturales que necesitamos para sobrevivir. Proporciona información sobre el rango, tamaño de la población, 
+        hábitat y ecología, uso y/o comercio, amenazas y acciones de conservación, lo que contribuirá a informar las
+         decisiones necesarias para la conservación.
+    </p>
+    <section class="preservacion-links">
+        <h2>Lista roja de la UICN</h2>
+        <!-- Enlaces -->
+        <div class="link-button" onclick="openLink('https://www.iucnredlist.org/support/donate')">Dona a IUCN</div>
+        <div class="link-button" onclick="openLink('https://www.iucnredlist.org/')">Conoce el proyecto </div>
+
+     
+    </section>
+</div>
+
 
 
 
